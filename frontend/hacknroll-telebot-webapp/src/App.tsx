@@ -2,18 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Theme, Flex, Text} from '@radix-ui/themes';
-import { Button } from "@/components/ui/button"
+import { Button, } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import EventInput from './elements/EventInput';
+import { Calendar } from "@/components/ui/calendar"
+import { ThemeProvider } from "@/components/theme-provider"
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { string } from 'zod';
+import DateRangePicker from './elements/DateRangePicker';
+import { ModeToggle } from './components/mode-toggle';
+import EventMessage from './elements/EventMessage';
+
+
  
 
 
-function App() {
+function App(): JSX.Element {
   return (
-    <Flex direction="column" gap="2">
-      <Text>Hello from Radix Themes</Text>
-      <div>
-      <Button>Click meme me</Button>
-      </div>
-    </Flex>
+    <ThemeProvider defaultTheme= "dark" storageKey="vite-ui-theme">
+      <EventMessage></EventMessage>
+    </ThemeProvider>
   )
 }
 export default App
