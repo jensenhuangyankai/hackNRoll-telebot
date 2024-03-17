@@ -4,7 +4,7 @@ import { defineConfig } from "vite"
  
 export default defineConfig({
   plugins: [react()],
-  base: "/hacknroll-frontend0/",
+  base: "/hacknroll-frontend/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
