@@ -28,12 +28,13 @@ const EventMessage: React.FC<ChildComponentProps>  = ({handleEventMessage, handl
     <div className='h-screen flex flex-col text-start justify-center items-center mx-20 p-4 m-auto'>
         <Alert>
         <AlertTitle> <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Jensen Turns One
     </h2></AlertTitle>
         <AlertDescription>
         <h4 className="scroll-m-20 text-xl pb-2 border-b font-semibold tracking-tight">
-      Date Range:
+      Date Range: 25th January - 26th January
     </h4>
-    <p className="leading-7 [&:not(:first-child)]:mt-6">    </p>
+    <p className="leading-7 [&:not(:first-child)]:mt-6"> This is a template, here you would see your description for the event!   </p>
         </AlertDescription>
     </Alert>
   
